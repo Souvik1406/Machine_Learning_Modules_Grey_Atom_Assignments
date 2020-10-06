@@ -1,0 +1,35 @@
+#note : All the outputs for each block has been provided seperately as a pdf - refer to Output number in the same for more details
+#importing necessary packages
+>>> import numpy as np
+    import pandas as pd
+    import matplotlib.pyplot as plt
+    %matplot.inline
+    
+>>> dataframe = pd.read_CSV('---/data/columns/train.CSV', index_col = 0) #input 1
+
+'''
+with the help of head() ab=nd tail() functions of the Pandas library, he easily checked out the first few and
+the last few lines of the Data Fram, respectively. 
+'''
+
+>>> dataframe.head(5) #5 rows x 80 column #input 2
+
+>>> datafram.info() #checking for null values in data sets, #input 3
+
+>>> '''
+    The describe() functions then helps him to get various summary statistics that exclude NaN values.
+    This function returns the count,mean, standard deviation, minimum and maximum values and the quantities of the data. 
+    '''
+    #No Output provided as it is only a comment line (DEscription of a Step Only) ]
+    
+>>> dataframe.describe() #input line 4
+
+>>> dataframe.shape()
+     #Output : (1460,80) commented out in the code a well for referential purposes.
+     
+>>> numerical_feature_columns = list(dataframe.get_numeric_data().columns)
+    numerical_feature_columns # input line 5
+    
+    
+    
+ 
